@@ -37,7 +37,7 @@ function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
 }
 
-function findCity(city) {
+/*function findCity(city) {
   let apiKey = "b28124b28c5acc252cee28bc2facf3a4";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid${apiKey}units=metric`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showWeather);
@@ -86,3 +86,4 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 findCity("Johannesburg");
+*/
