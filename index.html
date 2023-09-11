@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>weather-app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container -sm border custom-width">
+      <div class="Weather App"></div>
+      <br />
+      <form class="search-form" id="search-form">
+        <div class="row algin-items-start">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Enter your city"
+              class="form-control shadow-sm"
+              autocomplete="off"
+              autofocus="on"
+              id="city-input-text"
+            />
+          
+    </div>
+  
+
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control bnt bnt-primary shadow-sm w-100"
+              />
+            </div>
+        </div>
+      </form>
+      <br />
+              <div class="col-9">
+                <button
+                  class="bnt bnt-success w-100"
+                  id="current-location-button"
+                >
+                  Current location 📍
+                </button>
+              
+                <br />
+
+                <h1 id="city">Johanesburg</h1>
+                <div id="city-type"></div>
+
+                <h2 id="date">Thursday 24 August 17:00</h2>
+                <h3 div class="float-left">
+                  <span class="temperature" id="temperature">☀️<i id="sun-emoji"></i> 23 </span>
+                  <span class="units">°c</span>
+                </h3>
+                <h4 id="temperature-description">Clear sky</h4>
+                <div class="col-6">
+                  <ul>
+                    <li>Precipitation <span id="precipitation"></span></li>
+                    <li>Humidity:<span id="humidity">%</span></li>
+                    <li>Wind:<span id="wind"> km/h</span></li>
+                  </ul>
+                </div>
+                <br />
+                <br />
+                <p>This week</p>
+                <hr />
+                <div class="row">
+                  <div class="col-2">
+                    Thursday <br />
+                    ⛅ <br />
+                    21°c <br />
+                    8°c <br />
+                    partly cloudy
+                  </div>
+                  <div class="col-2">
+                    Friday <br />
+                    ☀️ <br />
+                    21°c <br />
+                    2°c <br />
+                    Sunny
+                  </div>
+                  <div class="col-2">
+                    Saturday <br />
+                    ☀️ <br />
+                    20°c <br />
+                    3°c <br />
+                    sunny
+                  </div>
+                  <div class="col-2">
+                    Sunday <br />
+                    ☀️ <br />
+                    18°c <br />
+                    6°c <br />
+                    clear sky
+                  </div>
+                  <div class="col-2">
+                    Monday <br />
+                    ☀️ <br />
+                    18°c <br />
+                    1°c <br />
+                    sunny
+                  </div>
+                  <div class="col-2">
+                    Tuesday <br />
+                    ☀️ <br />
+                    15°c <br />
+                    1°c <br />
+                    clear sky
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </form>
+      <a href="http://https://github.com/Rolanda-Davids-97/Weather-app.git" target="_blank"> Open-source code</a>
+       by Rolanda Davids
+    </div> 
+    <script src="src/index.js"></script>
+  </body>
+</html>
